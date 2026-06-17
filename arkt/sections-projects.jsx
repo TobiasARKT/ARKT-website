@@ -209,7 +209,7 @@ function GridProjects() {
   useEffect(() => {
     const calc = () => {
       const w = window.innerWidth;
-      setCols(w < 680 ? 1 : w < 1040 ? 2 : 3);
+      setCols(w < 680 ? 2 : w < 1040 ? 3 : 4);
     };
     calc();
     window.addEventListener("resize", calc);
@@ -299,6 +299,9 @@ function ProjectDetail({ proj, onClose }) {
           ) : (
             <Placeholder ratio="1/1" label="VISUELS" />
           )}
+          <div className="pdetail-tags">
+            {proj.tags.map((t) => (<span key={t} className="tag">{t}</span>))}
+          </div>
         </div>
         <div className="pdetail-body">
           <div className="pdetail-top">
@@ -307,9 +310,6 @@ function ProjectDetail({ proj, onClose }) {
           </div>
           <div className="pdetail-meta mono dim">{proj.year} · {proj.short}</div>
           <p className="pdetail-text">{proj.body}</p>
-          <div className="pdetail-tags">
-            {proj.tags.map((t) => (<span key={t} className="tag">{t}</span>))}
-          </div>
         </div>
       </div>
     </div>

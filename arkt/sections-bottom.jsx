@@ -101,7 +101,6 @@ function Testimonials() {
         </Reveal>
         <Reveal className="testi-stage">
           <div className="testi-quote-wrap">
-            <span className="testi-mark grad-text" aria-hidden="true">"</span>
             <blockquote className="testi-quote" key={i}>{highlightQuote(t.quote, t.hi)}</blockquote>
             <div className="testi-author">
               <div className="testi-avatar">

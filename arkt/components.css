@@ -80,7 +80,6 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
   text-transform: uppercase;
 }
 .hero-title .line { display: block; }
-.hero-title .line:nth-child(2) { padding-left: clamp(20px, 9vw, 150px); }
 .hero-sub {
   max-width: 620px; margin: clamp(30px, 5vh, 52px) 0 0;
   font-size: clamp(18px, 2vw, 24px); line-height: 1.5; font-weight: 420; letter-spacing: -0.01em;

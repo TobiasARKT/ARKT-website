@@ -252,7 +252,5 @@ window.ARKT = {
       bio: "Création de contenu vidéo & réseaux sociaux." },
     { name: "Driss Azzoug", role: "Consultant Pop Culture", img: "https://framerusercontent.com/images/CjN28LCNrCmOmsN9OiwjmEZaU.jpg?width=656&height=686",
       bio: "Veille pop culture, direction créative." },
-    { name: "Rayane Hemici", role: "Direction Artistique", img: "",
-      bio: "Graphisme, direction artistique, webdesign." },
   ],
 };

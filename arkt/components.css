@@ -99,7 +99,7 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 
 .hero-t1, .hero-t2 {
   font-family: "Big Shoulders Display", var(--sans);
-  font-size: calc(clamp(62px, 15vw, 220px) * var(--ds));
+  font-size: calc(clamp(52px, 12vw, 178px) * var(--ds));
   font-weight: 800; line-height: 0.9; text-transform: uppercase; margin: 0; width: 100%;
 }
 .hero-t2 { margin-bottom: clamp(28px, 4.5vh, 52px); }

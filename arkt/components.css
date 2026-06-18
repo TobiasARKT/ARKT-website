@@ -279,7 +279,7 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 .pdetail { grid-column: 1 / -1; max-height: 0; overflow: hidden; transition: max-height .6s cubic-bezier(.6,0,.2,1); }
 [data-motion="0"] .pdetail { transition: none; }
 .pdetail-in {
-  display: grid; grid-template-columns: 0.65fr 1fr; gap: clamp(24px, 3vw, 48px);
+  display: grid; grid-template-columns: 0.48fr 1fr; gap: clamp(24px, 3vw, 48px);
   background: linear-gradient(150deg, #FFFFFF, #F4F1E9); border: 1px solid rgba(242,83,63,0.34);
   box-shadow: 0 14px 34px -22px rgba(19,19,17,0.2);
   border-radius: var(--radius); padding: clamp(22px, 2.4vw, 36px); margin: 18px 0 12px;

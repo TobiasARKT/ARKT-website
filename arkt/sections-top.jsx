@@ -116,7 +116,7 @@ function Hero() {
         <h1 className="hero-t1 display">De l'idée</h1>
         <p className="hero-t2 display"><span className="grad-text">à l'impact.</span></p>
         <div className="hero-card">
-          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — construite sur une vision, portée par une stratégie, amplifiée par chaque prise de parole. Nous accompagnons fondateurs et directeurs pour transformer leur positionnement en levier de croissance durable.</p>
+          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — et ARKT lui donne une direction.</p>
         </div>
         <div className="hero-cta">
           <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>

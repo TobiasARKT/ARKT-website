@@ -86,13 +86,13 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 }
 
 .hero-eyebrow {
-  font-family: "Space Grotesk", var(--sans);
+  font-family: "Josefin Sans", var(--sans);
   font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--accent); margin: 0 0 clamp(20px, 3vh, 36px);
 }
 
 .hero-t1, .hero-t2 {
-  font-family: "Space Grotesk", var(--sans);
+  font-family: "Josefin Sans", var(--sans);
   font-size: calc(clamp(52px, 12vw, 178px) * var(--ds));
   font-weight: 700; letter-spacing: -0.03em; line-height: 0.9;
   text-transform: uppercase; margin: 0; width: 100%;

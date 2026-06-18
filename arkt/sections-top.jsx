@@ -122,12 +122,11 @@ function Hero() {
           <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>
           <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>
         </div>
+        <button className="hero-scroll" onClick={() => scrollToId("clients")} aria-label="Défiler">
+          <span className="mono">SCROLLEZ</span>
+          <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><path d="M7 1V20M7 20L1 14M7 20L13 14" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        </button>
       </div>
-
-      <button className="hero-scroll" onClick={() => scrollToId("clients")} aria-label="Défiler">
-        <span className="mono">SCROLLEZ</span>
-        <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><path d="M7 1V20M7 20L1 14M7 20L13 14" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
-      </button>
     </section>
   );
 }

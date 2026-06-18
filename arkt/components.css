@@ -86,13 +86,13 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 }
 
 .hero-eyebrow {
-  font-family: "Josefin Sans", var(--sans);
+  font-family: "Epilogue", var(--sans);
   font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--accent); margin: 0 0 clamp(20px, 3vh, 36px);
 }
 
 .hero-t1, .hero-t2 {
-  font-family: "Josefin Sans", var(--sans);
+  font-family: "Epilogue", var(--sans);
   font-size: calc(clamp(52px, 12vw, 178px) * var(--ds));
   font-weight: 700; letter-spacing: -0.03em; line-height: 0.9;
   text-transform: uppercase; margin: 0; width: 100%;
@@ -107,15 +107,15 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 }
 .hero-card p {
   font-size: clamp(14px, 1.2vw, 16px); line-height: 1.7;
-  color: rgba(232,228,216,0.7); margin: 0; text-align: left;
+  color: rgba(232,228,216,0.7); margin: 0; text-align: center;
 }
 
 .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
 
 .hero-scroll {
-  position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 12px;
-  background: transparent; border: 0; color: var(--dim); letter-spacing: 0.18em; z-index: 3;
+  background: transparent; border: 0; color: var(--dim); letter-spacing: 0.18em;
+  margin-top: clamp(24px, 4vh, 44px);
 }
 .hero-scroll svg { animation: bob 2.4s ease-in-out infinite; }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }

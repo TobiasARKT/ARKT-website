@@ -101,17 +101,36 @@ function Hero() {
   return (
     <section id="top" className="hero">
       <div className="hero-halo halo" />
-      <div className="wrap hero-in">
+
+      {/* ── top : eyebrow + liste services ── */}
+      <div className="wrap hero-top-row">
         <div className="hero-eyebrow reveal in">
           <span className="dot" />Agence de conseil en stratégie de marque · Marseille / Paris
         </div>
+        <div className="hero-svcs">
+          {D.offre.map((o, i) => (
+            <div className="hero-svc" key={i}>
+              <span className="hero-svc-num mono">//{String(i + 1).padStart(2, "0")}</span>
+              <span className="hero-svc-sep" />
+              <span className="hero-svc-name">{o.t}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── titre géant ── */}
+      <div className="wrap hero-title-zone">
         <h1 className="hero-title display">
           <span className="line">De l'idée</span>
-          <span className="line">à <span className="grad-text">l'impact.</span></span>
+          <span className="line"><span className="grad-text">à l'impact.</span></span>
         </h1>
+      </div>
+
+      {/* ── bas : sous-titre + CTA ── */}
+      <div className="wrap hero-btm-row">
         <p className="hero-sub">
           <span className="dim">Une marque n'est pas une suite d'actions.</span>{" "}
-          <span>C'est une trajectoire —</span>{" "}
+          C'est une trajectoire —{" "}
           <span className="dim">et ARKT lui donne une direction.</span>
         </p>
         <div className="hero-cta">
@@ -119,6 +138,7 @@ function Hero() {
           <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>
         </div>
       </div>
+
       <button className="hero-scroll" onClick={() => scrollToId("clients")} aria-label="Défiler">
         <span className="mono">SCROLLEZ</span>
         <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><path d="M7 1V20M7 20L1 14M7 20L13 14" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>

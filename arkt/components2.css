@@ -216,9 +216,12 @@ html[data-light="0"] .team-photo, html[data-light="0"] .team-photo-ph { backgrou
   .feat--pinned .pin-strip { transform: none !important; }
   .feat--pinned .pin-strip > .panel { width: 80vw !important; }
 }
+@media (max-width: 700px) {
+  .hero-top-row { flex-direction: column; gap: 20px; }
+  .hero-svcs { display: none; }
+  .hero-btm-row { flex-direction: column; align-items: flex-start; gap: 24px; }
+}
 @media (max-width: 560px) {
-  .hero-title .line:nth-child(2) { padding-left: 0; }
-  .testi-mark { font-size: 100px; top: -32px; }
   .testi-foot { flex-direction: column; align-items: flex-start; gap: 18px; }
   .foot-in { grid-template-columns: 1fr; gap: 30px; }
   .foot-bottom { flex-direction: column; align-items: flex-start; gap: 10px; }

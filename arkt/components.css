@@ -301,5 +301,7 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 .pdetail-close:hover { color: var(--white); border-color: rgba(19,19,17,0.4); }
 .pdetail-meta { margin: 14px 0 22px; }
 .pdetail-text { font-size: clamp(16px, 1.5vw, 19px); line-height: 1.6; color: #2C2B25; margin: 0 0 26px; text-wrap: pretty; }
-.pdetail-tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 14px; }
+.pdetail-tags { display: flex; flex-wrap: nowrap; gap: 9px; margin-top: 14px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+.pdetail-tags::-webkit-scrollbar { display: none; }
+.pdetail-tags .tag { flex-shrink: 0; }
 .tag { font-size: 13px; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--hairline); color: var(--dim); }

@@ -75,9 +75,10 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ---------------- type helpers ---------------- */
 .display {
-  font-weight: 600;
-  letter-spacing: -0.035em;
-  line-height: 0.96;
+  font-family: "Big Shoulders Display", var(--sans);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 0.92;
   text-wrap: balance;
 }
 .dim { color: var(--dim); }

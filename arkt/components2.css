@@ -216,10 +216,16 @@ html[data-light="0"] .team-photo, html[data-light="0"] .team-photo-ph { backgrou
   .feat--pinned .pin-strip { transform: none !important; }
   .feat--pinned .pin-strip > .panel { width: 80vw !important; }
 }
+@media (max-width: 860px) {
+  .topbar { font-size: 11px; letter-spacing: 0.03em; }
+}
 @media (max-width: 700px) {
-  .hero-top-row { flex-direction: column; gap: 20px; }
+  .topbar { display: none; }
+  .hdr { top: 0; }
+  .hero { padding-top: 76px; }
+  .hero-mid { flex-direction: column; align-items: flex-start; gap: 24px; }
   .hero-svcs { display: none; }
-  .hero-btm-row { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .hero-desc { max-width: 100%; }
 }
 @media (max-width: 560px) {
   .testi-foot { flex-direction: column; align-items: flex-start; gap: 18px; }

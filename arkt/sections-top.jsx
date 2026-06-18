@@ -53,6 +53,16 @@ function scrollToId(id) {
   if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 76, behavior: "smooth" });
 }
 
+/* ---------------- TopBar ---------------- */
+function TopBar() {
+  return (
+    <div className="topbar">
+      <span className="topbar-dot" />
+      Agence de conseil en stratégie de marque&nbsp;&middot;&nbsp;Marseille / Paris
+    </div>
+  );
+}
+
 /* ---------------- Header ---------------- */
 function Header() {
   const D = window.ARKT;
@@ -102,10 +112,19 @@ function Hero() {
     <section id="top" className="hero">
       <div className="hero-halo halo" />
 
-      {/* ── top : eyebrow + liste services ── */}
-      <div className="wrap hero-top-row">
-        <div className="hero-eyebrow reveal in">
-          <span className="dot" />Agence de conseil en stratégie de marque · Marseille / Paris
+      {/* Ligne 1 */}
+      <div className="wrap">
+        <h1 className="hero-t1 display">De l'idée</h1>
+      </div>
+
+      {/* Zone centrale : carte texte + services */}
+      <div className="wrap hero-mid">
+        <div className="hero-desc">
+          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — construite sur une vision, portée par une stratégie, amplifiée par chaque prise de parole. Nous accompagnons fondateurs et directeurs marketing pour transformer leur positionnement en levier de croissance durable.</p>
+          <div className="hero-cta">
+            <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>
+            <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>
+          </div>
         </div>
         <div className="hero-svcs">
           {D.offre.map((o, i) => (
@@ -118,25 +137,9 @@ function Hero() {
         </div>
       </div>
 
-      {/* ── titre géant ── */}
-      <div className="wrap hero-title-zone">
-        <h1 className="hero-title display">
-          <span className="line">De l'idée</span>
-          <span className="line"><span className="grad-text">à l'impact.</span></span>
-        </h1>
-      </div>
-
-      {/* ── bas : sous-titre + CTA ── */}
-      <div className="wrap hero-btm-row">
-        <p className="hero-sub">
-          <span className="dim">Une marque n'est pas une suite d'actions.</span>{" "}
-          C'est une trajectoire —{" "}
-          <span className="dim">et ARKT lui donne une direction.</span>
-        </p>
-        <div className="hero-cta">
-          <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>
-          <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>
-        </div>
+      {/* Ligne 2 — accent */}
+      <div className="wrap">
+        <p className="hero-t2 display"><span className="grad-text">à l'impact.</span></p>
       </div>
 
       <button className="hero-scroll" onClick={() => scrollToId("clients")} aria-label="Défiler">
@@ -196,4 +199,4 @@ function Moment() {
   );
 }
 
-Object.assign(window, { Reveal, Arrow, Placeholder, Logo, scrollToId, Header, Hero, SocialProof, Moment });
+Object.assign(window, { Reveal, Arrow, Placeholder, Logo, scrollToId, TopBar, Header, Hero, SocialProof, Moment });

@@ -92,23 +92,10 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 }
 
 .hero-t1, .hero-t2 {
-  font-family: "Epilogue", var(--sans);
   font-size: calc(clamp(52px, 12vw, 178px) * var(--ds));
-  font-weight: 700; letter-spacing: -0.03em; line-height: 0.9;
-  text-transform: uppercase; margin: 0; width: 100%;
+  line-height: 0.9; text-transform: uppercase; margin: 0; width: 100%;
 }
 .hero-t2 { margin-bottom: clamp(28px, 4.5vh, 52px); }
-
-.hero-card {
-  max-width: 560px; width: 100%;
-  background: rgba(13,13,11,0.88); border: 1px solid var(--hairline);
-  padding: clamp(20px, 2vw, 30px); border-radius: 10px;
-  margin-bottom: clamp(24px, 3.5vh, 40px);
-}
-.hero-card p {
-  font-size: clamp(14px, 1.2vw, 16px); line-height: 1.7;
-  color: rgba(232,228,216,0.7); margin: 0; text-align: center;
-}
 
 .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
 

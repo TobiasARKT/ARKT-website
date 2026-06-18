@@ -114,10 +114,7 @@ function Hero() {
       <div className="wrap hero-center">
         <p className="hero-eyebrow">Agence de marque · Marseille / Paris</p>
         <h1 className="hero-t1 display">De l'idée</h1>
-        <p className="hero-t2 display"><span className="grad-text">à l'impact.</span></p>
-        <div className="hero-card">
-          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — et ARKT lui donne une direction.</p>
-        </div>
+        <p className="hero-t2 display" style={{ color: "var(--accent)" }}>à l'impact.</p>
         <div className="hero-cta">
           <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>
           <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>

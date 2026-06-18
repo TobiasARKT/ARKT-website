@@ -68,59 +68,65 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 /* =================== HERO =================== */
 .hero {
   min-height: 100svh; position: relative;
-  display: flex; flex-direction: column; justify-content: space-between;
-  padding-top: calc(34px + 76px); padding-bottom: clamp(60px, 8vh, 90px);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding-top: calc(34px + 76px);
   overflow: hidden;
 }
 .hero-halo {
   width: 70vw; height: 70vw; max-width: 900px; max-height: 900px;
-  left: 60%; top: 60%; transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(255,69,51,0.4), rgba(255,106,0,0.12) 42%, transparent 68%);
+  left: 70%; top: 75%; transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(255,69,51,0.45), rgba(255,106,0,0.12) 42%, transparent 68%);
   opacity: calc(var(--halo) * 0.5);
 }
-.hero-arc {
-  position: absolute; right: -6vw; bottom: -14vh; height: 118vh; width: auto;
-  opacity: 0.06; pointer-events: none; filter: saturate(1.1);
-  mix-blend-mode: multiply;
-}
 
-/* Lignes du titre */
-.hero-t1, .hero-t2 {
+/* Eyebrow accent + titre ligne 1 */
+.hero-main { padding-bottom: clamp(16px, 2.5vh, 28px); }
+.hero-eyebrow {
   font-family: "Barlow Condensed", var(--sans);
+  font-weight: 700; font-size: 13px; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--accent);
+  margin: 0 0 clamp(6px, 1vh, 12px);
+}
+.hero-t1 {
+  font-family: "Barlow Condensed", var(--sans);
+  font-size: calc(clamp(60px, 17vw, 250px) * var(--ds));
   font-weight: 800; letter-spacing: -0.01em; line-height: 0.88;
   text-transform: uppercase; margin: 0;
-  position: relative; z-index: 2;
 }
-.hero-t1 { font-size: calc(clamp(56px, 15vw, 218px) * var(--ds)); }
-.hero-t2 { font-size: calc(clamp(64px, 18vw, 262px) * var(--ds)); }
 
-/* Zone centrale */
-.hero-mid {
-  position: relative; z-index: 2;
-  display: flex; align-items: flex-end; justify-content: space-between;
-  gap: 32px; padding: clamp(20px, 3.5vh, 44px) 0;
-}
-.hero-desc {
-  max-width: 420px; flex-shrink: 0;
-  background: rgba(19,19,17,0.72); border: 1px solid var(--hairline);
-  border-radius: 14px; padding: clamp(20px, 2vw, 30px);
-  backdrop-filter: blur(10px); display: flex; flex-direction: column; gap: 22px;
-}
-.hero-desc p {
-  font-size: clamp(13px, 1.1vw, 15px); line-height: 1.7;
-  color: rgba(232,228,216,0.7); margin: 0;
+/* CTA entre les deux lignes, aligné à droite */
+.hero-cta-zone {
+  display: flex; justify-content: flex-end;
+  padding-bottom: clamp(14px, 2.2vh, 26px);
 }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
-.hero-svcs { display: flex; flex-direction: column; gap: 11px; align-self: flex-end; }
-.hero-svc { display: flex; align-items: center; gap: 14px; }
-.hero-svc-num { font-size: 11px; color: var(--dim); letter-spacing: 0.06em; opacity: 0.55; white-space: nowrap; }
-.hero-svc-sep { flex: 0 0 clamp(32px, 7vw, 110px); height: 1px; background: var(--hairline); }
-.hero-svc-name { font-size: 13px; color: var(--dim); white-space: nowrap; }
+
+/* Dernière rangée : carte gauche + ligne accent qui déborde à droite */
+.hero-last-row {
+  display: flex; align-items: flex-start;
+  padding-left: var(--gutter);
+  padding-bottom: clamp(56px, 8vh, 86px);
+}
+.hero-card {
+  width: clamp(240px, 30vw, 400px); flex-shrink: 0;
+  background: rgba(13,13,11,0.9); border: 1px solid var(--hairline);
+  padding: clamp(18px, 1.8vw, 26px); position: relative; z-index: 2;
+}
+.hero-card p {
+  font-size: clamp(13px, 1.1vw, 15px); line-height: 1.7;
+  color: rgba(232,228,216,0.65); margin: 0;
+}
+.hero-t2 {
+  font-family: "Barlow Condensed", var(--sans);
+  font-size: calc(clamp(60px, 17vw, 250px) * var(--ds));
+  font-weight: 800; letter-spacing: -0.01em; line-height: 0.88;
+  text-transform: uppercase; margin: 0; white-space: nowrap; flex-shrink: 0;
+}
 
 .hero-scroll {
-  position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
+  position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 12px;
-  background: transparent; border: 0; color: var(--dim); letter-spacing: 0.18em; z-index: 2;
+  background: transparent; border: 0; color: var(--dim); letter-spacing: 0.18em; z-index: 3;
 }
 .hero-scroll svg { animation: bob 2.4s ease-in-out infinite; }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }

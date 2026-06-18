@@ -107,38 +107,29 @@ function Header() {
 
 /* ---------------- Hero ---------------- */
 function Hero() {
-  const D = window.ARKT;
   return (
     <section id="top" className="hero">
       <div className="hero-halo halo" />
 
-      {/* Ligne 1 */}
-      <div className="wrap">
+      {/* Eyebrow + ligne 1 */}
+      <div className="wrap hero-main">
+        <p className="hero-eyebrow">Agence de marque · Marseille / Paris</p>
         <h1 className="hero-t1 display">De l'idée</h1>
       </div>
 
-      {/* Zone centrale : carte texte + services */}
-      <div className="wrap hero-mid">
-        <div className="hero-desc">
-          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — construite sur une vision, portée par une stratégie, amplifiée par chaque prise de parole. Nous accompagnons fondateurs et directeurs marketing pour transformer leur positionnement en levier de croissance durable.</p>
-          <div className="hero-cta">
-            <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>
-            <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>
-          </div>
-        </div>
-        <div className="hero-svcs">
-          {D.offre.map((o, i) => (
-            <div className="hero-svc" key={i}>
-              <span className="hero-svc-num mono">//{String(i + 1).padStart(2, "0")}</span>
-              <span className="hero-svc-sep" />
-              <span className="hero-svc-name">{o.t}</span>
-            </div>
-          ))}
+      {/* CTA entre les deux lignes — droite */}
+      <div className="wrap hero-cta-zone">
+        <div className="hero-cta">
+          <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>
+          <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>
         </div>
       </div>
 
-      {/* Ligne 2 — accent */}
-      <div className="wrap">
+      {/* Carte gauche + ligne 2 accent qui déborde à droite */}
+      <div className="hero-last-row">
+        <div className="hero-card">
+          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — construite sur une vision, portée par une stratégie, amplifiée par chaque prise de parole. Nous accompagnons fondateurs et directeurs pour transformer leur positionnement en levier de croissance durable.</p>
+        </div>
         <p className="hero-t2 display"><span className="grad-text">à l'impact.</span></p>
       </div>
 

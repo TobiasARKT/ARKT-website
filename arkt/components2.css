@@ -223,9 +223,9 @@ html[data-light="0"] .team-photo, html[data-light="0"] .team-photo-ph { backgrou
   .topbar { display: none; }
   .hdr { top: 0; }
   .hero { padding-top: 76px; }
-  .hero-mid { flex-direction: column; align-items: flex-start; gap: 24px; }
-  .hero-svcs { display: none; }
-  .hero-desc { max-width: 100%; }
+  .hero-last-row { flex-direction: column; padding-left: var(--gutter); padding-right: var(--gutter); }
+  .hero-card { width: 100%; }
+  .hero-t2 { white-space: normal; }
 }
 @media (max-width: 560px) {
   .testi-foot { flex-direction: column; align-items: flex-start; gap: 18px; }

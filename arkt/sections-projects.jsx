@@ -238,7 +238,7 @@ function GridProjects() {
               }
               <div className="ptile-foot">
                 <div className="ptile-name">{g.name}</div>
-                <div className="ptile-meta"><span className="dim">{g.short}</span><span className="ptile-year mono">{g.year}</span></div>
+                <div className="ptile-year mono">{g.year}</div>
               </div>
               <span className="ptile-plus" aria-hidden="true"><i /><i /></span>
             </Reveal>

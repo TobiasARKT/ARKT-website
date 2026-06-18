@@ -246,7 +246,7 @@ window.ARKT = {
   team: [
     { name: "Arthur Barret", role: "Founder & CEO", img: "https://framerusercontent.com/images/rb4UNclQQsvqth0gNNBep2r4jHg.png?width=1436&height=1434",
       bio: "+10 ans à la tête de directions marketing & commerciales — Vestiaire Collective, Selency. Cofondateur du concept food La Meulerie." },
-    { name: "Tobias Simon", role: "Bras droit du CEO", img: "https://framerusercontent.com/images/XXlxtuXS3aS1YGtBgxtvWp8eA.jpeg?width=717&height=601",
+    { name: "Tobias Simon", role: "Consultant Marketing", img: "https://framerusercontent.com/images/XXlxtuXS3aS1YGtBgxtvWp8eA.jpeg?width=717&height=601",
       bio: "Coordination clients, gestion des projets récurrents, growth strategy." },
     { name: "Mickaël Guagenti", role: "Consultant Marketing", img: "https://framerusercontent.com/images/wwCV3juDZzvq7vIgGLzKbvVCtM.jpeg?width=800&height=800",
       bio: "Création de contenu vidéo & réseaux sociaux." },

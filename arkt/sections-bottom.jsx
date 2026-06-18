@@ -95,21 +95,24 @@ function Testimonials() {
   return (
     <section className="section-pad testi">
       <div className="testi-halo halo" />
-      <div className="wrap">
-        <Reveal className="testi-head">
-          <p className="eyebrow"><span className="dot" />Témoignages</p>
+      <div className="wrap testi-layout">
+
+        {/* Gauche : titre */}
+        <Reveal className="testi-left">
+          <p className="eyebrow testi-eyebrow"><span className="dot" />Témoignages</p>
+          <h2 className="testi-bigtitle display">Ce que<br />nos clients<br />disent.</h2>
         </Reveal>
-        <Reveal className="testi-stage">
-          <div className="testi-quote-wrap">
-            <blockquote className="testi-quote" key={i}>{highlightQuote(t.quote, t.hi)}</blockquote>
-            <div className="testi-author">
-              <div className="testi-avatar">
-                {t.img ? <img src={t.img} alt={t.name} loading="lazy" /> : <span className="testi-avatar-ph">{t.name.split(" ").map((w) => w[0]).join("")}</span>}
-              </div>
-              <div>
-                <div className="testi-name">{t.name}</div>
-                <div className="testi-role dim">{t.role}</div>
-              </div>
+
+        {/* Droite : citation */}
+        <Reveal className="testi-right">
+          <blockquote className="testi-quote" key={i}>{highlightQuote(t.quote, t.hi)}</blockquote>
+          <div className="testi-author">
+            <div className="testi-avatar">
+              {t.img ? <img src={t.img} alt={t.name} loading="lazy" /> : <span className="testi-avatar-ph">{t.name.split(" ").map((w) => w[0]).join("")}</span>}
+            </div>
+            <div>
+              <div className="testi-name">{t.name}</div>
+              <div className="testi-role dim">{t.role}</div>
             </div>
           </div>
           <div className="testi-foot">
@@ -124,6 +127,7 @@ function Testimonials() {
             </div>
           </div>
         </Reveal>
+
       </div>
     </section>
   );

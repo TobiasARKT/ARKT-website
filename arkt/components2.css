@@ -58,12 +58,20 @@ html[data-light="0"] .appr-track { background: var(--hairline); }
 .offre-item-arr { display: none; }
 
 /* =================== TÉMOIGNAGES =================== */
-.testi { overflow: hidden; background: var(--bg-blanc); }
-.testi-halo { width: 50vw; height: 50vw; max-width: 700px; max-height: 700px; left: -10%; top: 20%; background: radial-gradient(circle, rgba(255,69,51,0.4), transparent 68%); opacity: calc(var(--halo) * 0.4); }
-.testi-head { margin-bottom: 34px; }
-.testi-stage { max-width: 1000px; }
-.testi-quote-wrap { position: relative; }
-.testi-mark { position: absolute; left: -10px; top: -50px; font-size: 160px; line-height: 1; font-weight: 700; opacity: 0.9; pointer-events: none; }
+.testi { overflow: hidden; }
+.testi-halo { width: 44vw; height: 44vw; max-width: 600px; max-height: 600px; left: -8%; top: 15%; background: radial-gradient(circle, rgba(255,69,51,0.35), transparent 68%); opacity: calc(var(--halo) * 0.35); }
+
+.testi-layout { display: grid; grid-template-columns: 1fr 2fr; gap: clamp(48px, 6vw, 96px); align-items: center; }
+
+.testi-left { display: flex; flex-direction: column; }
+.testi-eyebrow { margin-bottom: clamp(20px, 3vh, 32px); }
+.testi-bigtitle {
+  font-family: "Big Shoulders Display", var(--sans);
+  font-size: clamp(44px, 6vw, 88px); font-weight: 900;
+  text-transform: uppercase; line-height: 0.88; letter-spacing: -0.01em; margin: 0;
+}
+
+.testi-right { display: flex; flex-direction: column; }
 .testi-quote {
   font-size: clamp(24px, 3.4vw, 46px); line-height: 1.32; letter-spacing: -0.025em; font-weight: 460;
   color: var(--dim); margin: 0; position: relative; text-wrap: pretty;
@@ -227,6 +235,8 @@ html[data-light="0"] .team-photo, html[data-light="0"] .team-photo-ph { backgrou
   .hero-t1, .hero-t2 { font-size: calc(clamp(44px, 12vw, 178px) * var(--ds)); }
 }
 @media (max-width: 560px) {
+  .testi-layout { grid-template-columns: 1fr; gap: clamp(32px, 5vh, 52px); }
+  .testi-bigtitle { font-size: clamp(44px, 10vw, 72px); }
   .testi-foot { flex-direction: column; align-items: flex-start; gap: 18px; }
   .foot-in { grid-template-columns: 1fr; gap: 30px; }
   .foot-bottom { flex-direction: column; align-items: flex-start; gap: 10px; }

@@ -109,7 +109,8 @@ function Header() {
 function Hero() {
   return (
     <section id="top" className="hero">
-      <div className="hero-halo halo" />
+      <div className="hero-halo-tl halo" />
+      <div className="hero-halo-br halo" />
 
       <div className="wrap hero-center">
         <p className="hero-eyebrow">Agence de marque · Marseille / Paris</p>

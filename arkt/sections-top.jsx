@@ -111,26 +111,17 @@ function Hero() {
     <section id="top" className="hero">
       <div className="hero-halo halo" />
 
-      {/* Eyebrow + ligne 1 */}
-      <div className="wrap hero-main">
+      <div className="wrap hero-center">
         <p className="hero-eyebrow">Agence de marque · Marseille / Paris</p>
         <h1 className="hero-t1 display">De l'idée</h1>
-      </div>
-
-      {/* CTA entre les deux lignes — droite */}
-      <div className="wrap hero-cta-zone">
+        <p className="hero-t2 display"><span className="grad-text">à l'impact.</span></p>
+        <div className="hero-card">
+          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — construite sur une vision, portée par une stratégie, amplifiée par chaque prise de parole. Nous accompagnons fondateurs et directeurs pour transformer leur positionnement en levier de croissance durable.</p>
+        </div>
         <div className="hero-cta">
           <button className="btn btn-primary" onClick={() => scrollToId("projets")}>Voir nos projets <Arrow /></button>
           <a className="btn btn-ghost" href="#contact" onClick={(e) => { e.preventDefault(); scrollToId("contact"); }}>Nous écrire</a>
         </div>
-      </div>
-
-      {/* Carte gauche + ligne 2 accent qui déborde à droite */}
-      <div className="hero-last-row">
-        <div className="hero-card">
-          <p>Une marque n'est pas une suite d'actions. C'est une trajectoire — construite sur une vision, portée par une stratégie, amplifiée par chaque prise de parole. Nous accompagnons fondateurs et directeurs pour transformer leur positionnement en levier de croissance durable.</p>
-        </div>
-        <p className="hero-t2 display"><span className="grad-text">à l'impact.</span></p>
       </div>
 
       <button className="hero-scroll" onClick={() => scrollToId("clients")} aria-label="Défiler">

@@ -54,7 +54,7 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 
 /* =================== HEADER =================== */
 .hdr {
-  position: fixed; top: 34px; left: 0; right: 0; z-index: 100;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   transition: background .4s, border-color .4s, backdrop-filter .4s;
   border-bottom: 1px solid transparent;
 }
@@ -69,7 +69,7 @@ html[data-light="0"] .light-section .rule { background: var(--hairline); }
 .hero {
   min-height: 100svh; position: relative;
   display: flex; flex-direction: column; justify-content: center; align-items: center;
-  padding-top: calc(34px + 76px); padding-bottom: clamp(72px, 10vh, 100px);
+  padding-top: 76px; padding-bottom: clamp(72px, 10vh, 100px);
   overflow: hidden; text-align: center;
 }
 .hero-halo-tl {

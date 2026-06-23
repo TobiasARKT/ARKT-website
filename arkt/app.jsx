@@ -42,7 +42,6 @@ function App() {
 
   return (
     <React.Fragment>
-      <TopBar />
       <Header />
       <main>
         <Hero />
